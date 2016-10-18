@@ -15,14 +15,23 @@ function formatDate(date) {
 	return formattedDate;
 }
 
-module.exports = function getDilbert(date, callback) {
-	var yesterday = new Date().getDate() - 1;
+module.exports = function getDilbert(callback) {
+	var yesterday = new Date()
+	yesterday.setDate(yesterday.getDate() - 1)
 	var date = formatDate(randomDate(firstDilbert, yesterday))
 	// Get Dilbert page
 	request('http://www.dilbert.com/strip/'+date, function(err, response, body) {
 		if (err) return callback(err);
-		// User cheerio to access the html of the returned page
-		$ = cheerio.load(body);
-		return callback(null, $('.img-comic').get(0).attribs.src);
+		// Use cheerio to access the html of the returned page
+		try {
+			$ = cheerio.load(body);
+			var results = {
+				date: date,
+				url: $('.img-comic').get(0).attribs.src
+			}
+		} catch (err) {
+			return callback(new Error('Failed to parse Dilbert\'s body')) // hehe
+		}
+		return callback(null, results);
 	});
 }
