@@ -10,7 +10,7 @@ function randomDate(start, end) {
 
 // dilbert urls are formatted as /year-month-day
 function formatDate(date) {
-	var year = date.getFullYear(), month = date.getMonth(), day = date.getDay();
+	var year = date.getFullYear(), month = date.getMonth() + 1, day = date.getDate() + 1;
 	var formattedDate = year + '-' + month + '-' + day;
 	return formattedDate;
 }
