@@ -4,7 +4,7 @@
   "description": "Gets a random dilbert image url",
   "main": "dilbert.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "David Aaron Suddjian <aasuddjian@gmail.com>",
   "license": "ISC",
@@ -12,5 +12,9 @@
     "async": "^2.1.2",
     "cheerio": "^0.22.0",
     "request": "^2.75.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
   }
 }
