@@ -1,6 +1,6 @@
 {
   "name": "random-dilbert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gets a random dilbert image url",
   "main": "dilbert.js",
   "scripts": {
