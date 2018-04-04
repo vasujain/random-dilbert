@@ -1,6 +1,6 @@
 # Random Dilbert
 
-This module gets a random Dilbert comic from [dilbert.com](http://www.dilbert.com)
+This module gets today's Dilbert comic from [dilbert.com](http://www.dilbert.com)
 
 Beware: This function fetches and parses html. It is *slow*.
 
@@ -17,7 +17,4 @@ dilbert(function(err, data) {
 
 dilbert.com doesn't have an api so there's some dom magic going on in the backend to be able to get the comic.
 
-All the Dilbert comics have their own page, the url to this page is the date that it was posted. The first Dilbert comic was posted April 16, 1989.
-By getting a random date between the first Dilbert comic and today, we can achieve the noble goal of Random Dilbert.
-
-Credit for the original idea of getting a random date and parsing the html goes to [gavindinubilo](https://github.com/gavindinubilo/random-dilbert) (many thanks).
+Credit for the original idea of getting a random dilbert comic package goes to [gavindinubilo](https://github.com/ChemicalRocketeer) (thanks).
