@@ -1,20 +1,20 @@
 {
-  "name": "random-dilbert",
-  "version": "1.1.0",
-  "description": "Gets a random dilbert image url",
-  "main": "dilbert.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "David Aaron Suddjian <aasuddjian@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "async": "^2.1.2",
-    "cheerio": "^0.22.0",
-    "request": "^2.75.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2"
-  }
+    "name": "today-dilbert",
+    "version": "1.1.1",
+    "description": "Gets today's dilbert image url",
+    "main": "dilbert.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "Vasu Jain",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^2.1.2",
+        "cheerio": "^0.22.0",
+        "request": "^2.75.0"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.1.2"
+    }
 }
