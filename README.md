@@ -1,4 +1,4 @@
-# Random Dilbert
+# Today Dilbert
 
 This module gets today's Dilbert comic from [dilbert.com](http://www.dilbert.com)
 
